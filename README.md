@@ -1,3 +1,16 @@
+# HMMA238 - Bike challenge 2021
+
+## Prediction part
+
+This repository contains my work for an individual challenge based on bike traffic prediction in Montpellier, as part of my [HMMA238 course in 'Software devlopment'](https://github.com/bcharlier/HMMA238).
+
+-----
+
+The goal was to predict the number of bicycle passing between 00:01 AM and 09:00 AM on Friday, April 2nd. My methodology is described in the `Vernay_Amélie_methodology.pdf` file in the `Methodology` folder.
+
+-----
+
+
 ## Repository architecture
 
 * `Data`
