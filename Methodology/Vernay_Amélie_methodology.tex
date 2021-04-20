@@ -55,7 +55,7 @@ I decided to keep things simple. The dataset we were given was kind of messy. Th
 So I wrote a bunch of \texttt{python} functions to deal this dataset. The most important ones are probably \texttt{drop\_hour\_gap} and \texttt{resamp\_interp}. The first one drops the days for which we don't have a first entry before a given hour. For example, using it with \texttt{hour=12} would keep only the days of the given dataframe for which there is at least one entry before 12 AM. The motivation for this function is to initialize a "correct" dataset to give to the next function \texttt{resamp\_interp}. This one downsamples the dataset to the greatest common time basis: minute, sets zero values for the time 00:00 to 00:59 on each day\footnote{It could have been only for 00:00 but since almost no bike are passing on the totem at this time of the day, well I found it more relevant to set this to zero for the coming interpolation purpose.}, and interpolates the values to fill the \texttt{NaN} values appeared when resampling. I applied these (and others) functions on the extracted data for the month of March, in the notebook \texttt{resamp\_interp\_test.ipynb} to check visually the relevance of my method. The result looks like this:\\
 
 \begin{center}
-\includegraphics[scale=0.35]{resamp_interp.png}
+\includegraphics[scale=0.35]{resamp_interp.jpg} 
 \end{center}
 
 
